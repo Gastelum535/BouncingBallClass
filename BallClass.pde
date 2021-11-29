@@ -49,7 +49,7 @@ public class Ball
     yD = 5;
     diameter = (int)(Math.random() * 50 + 10);
   }
-  public Ball(int xD, iny yD, int diameter)
+  public Ball(int xD, int yD, int diameter)
   {
     this.xD = xD;
     this.yD = yD;
@@ -57,7 +57,7 @@ public class Ball
   }
   
   //constructor that will increase in speed (xD & yD) and diameter 
-  public void speed(int 
+  
   //methods 
   public void update()
   {
