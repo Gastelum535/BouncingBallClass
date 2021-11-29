@@ -80,11 +80,11 @@ public class Ball
   {
     if(x > width || x < 0)
     {
-      xD *= -1;
+      xD = xD* -1;
     }
     if(y > height || y < 0)
     {
-      yD *= -1;
+      yD = yD* -1;
     }
   }
 }
