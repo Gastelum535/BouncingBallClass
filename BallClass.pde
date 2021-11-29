@@ -5,6 +5,7 @@
 //Global Variables 
 Ball b1;
 Ball b2;
+Ball b3;
 
 //setup method
 public void setup()
@@ -13,6 +14,7 @@ public void setup()
   background(120);
   b1 = new Ball();
   b2 = new Ball();
+  b3 = new Ball();
 }
 
 //draw method 
@@ -26,6 +28,10 @@ public void draw()
   b2.update();
   b2.drawBall();
   b2.checkEdges();
+  
+  b3.update();
+  b3.drawBall();
+  b3.checkEdges();
 }
 public class Ball
 {
@@ -76,7 +82,7 @@ public class Ball
     {
       xD *= -1;
     }
-    if(y > height || x < 0)
+    if(y > height || y < 0)
     {
       yD *= -1;
     }
